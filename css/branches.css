@@ -1,0 +1,101 @@
+body {
+    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.top-bar {
+    background: #111827;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 16px 20px;
+}
+
+.sidebar li.active {
+    background: #e5e7eb;
+    font-weight: bold;
+}
+
+/* CONTENT */
+.content {
+    padding: 30px;
+    flex: 1;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* FORM CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    max-width: 400px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* BRANCH GRID */
+.branch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.branch-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.branch-card span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}

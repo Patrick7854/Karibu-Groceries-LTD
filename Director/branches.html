@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Branches | Director</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/branches.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>KGL Groceries LTD</h1>
+    <div class="user-info">
+        <i class="fa-solid fa-user-shield"></i>
+        Director
+    </div>
+</header>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="dashboard.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+            <li class="active"><i class="fa-solid fa-building"></i> Branches</li>
+            <li><i class="fa-solid fa-gear"></i> Settings</li>
+        </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <h2>Add New Branch</h2>
+
+        <!-- ADD BRANCH FORM -->
+        <form id="branchForm" class="card">
+            <label>Branch Name</label>
+            <input type="text" id="branchName" required minlength="2">
+
+            <label>Location</label>
+            <input type="text" id="location" required minlength="2">
+
+            <label>Manager Name</label>
+            <input type="text" id="managerName" required minlength="2">
+
+            <label>Contact</label>
+            <input type="tel" id="contact" placeholder="+2567XXXXXXXX" required>
+
+            <button type="submit">
+                <i class="fa-solid fa-plus"></i> Add Branch
+            </button>
+        </form>
+
+        <h2>Existing Branches</h2>
+
+        <!-- BRANCH LIST -->
+        <div id="branchList" class="branch-grid"></div>
+
+    </main>
+
+</div>
+
+<script src="../js/branches.js"></script>
+</body>
+</html>

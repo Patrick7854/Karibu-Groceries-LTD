@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+/* MAIN WRAPPER */
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT IMAGE */
+.login-image {
+    flex: 1;
+    background: url("../assets/images/ware-house.png") center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 42, 67, 0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* RIGHT FORM */
+.login-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+.side-logo{
+   width: 50%;
+   
+}
+
+.form-card h2 {
+    margin-bottom: 5px;
+    color: #0a2a43;
+}
+
+.form-card p {
+    margin-bottom: 25px;
+    color: #6b7280;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+form label i {
+    margin-right: 6px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #0a2a43;
+}
+
+form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background: #0a2a43;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #063053;
+}
+
+small {
+    display: block;
+    margin-top: 20px;
+    color: #9ca3af;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .login-image {
+        display: none;
+    }
+}

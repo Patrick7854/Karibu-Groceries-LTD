@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Dashboard | KGL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sales-dashboard.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+    <h1>KGL Groceries LTD</h1>
+    <div class="user-info">
+        <i class="fa-solid fa-user"></i>
+        <span>Sales Agent</span>
+    </div>
+</header>
+
+<!-- MAIN -->
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <ul>
+            <li class="active"><i class="fa-solid fa-chart-bar"></i> Dashboard</li>
+            <li><i class="fa-solid fa-cash-register"></i> Sell Produce</li>
+            <li><i class="fa-solid fa-file-invoice"></i> Credit Sales</li>
+            <li><i class="fa-solid fa-gear"></i> Settings</li>
+        </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <h2>My Sales Overview</h2>
+
+        <!-- SUMMARY CARDS -->
+        <div class="cards">
+
+            <div class="card">
+                <img src="../assets/images/ware-house.png" alt="Stock">
+                <div class="card-info">
+                    <h3>Available Stock</h3>
+                    <p>8,500 KG</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/images/sale.png" alt="Sales">
+                <div class="card-info">
+                    <h3>Today’s Sales</h3>
+                    <p>UGX 450,000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/images/credit.png" alt="Credit">
+                <div class="card-info">
+                    <h3>Credit Sales</h3>
+                    <p>UGX 120,000</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- QUICK ACTIONS -->
+        <h2>Quick Actions</h2>
+
+        <div class="actions">
+
+            <div class="action-card">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <h4 class="text">Record Sale</h4>
+            </div>
+
+            <div class="action-card">
+                <i class="fa-solid fa-file-invoice"></i>
+                <h4 class="text">Credit Sale</h4>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

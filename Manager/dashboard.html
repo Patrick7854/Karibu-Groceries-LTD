@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Dashboard | KGL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/manager-dashboard.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+    <h1>KGL GROCERIES LTD</h1>
+    <img class="logo" src="/assets/images/kgl logo.png" alt="KGL Logo">
+    <div class="user-info">
+        <i class="fa-solid fa-user-tie"></i>
+        <span>Manager</span>
+    </div>
+</header>
+
+<!-- MAIN LAYOUT -->
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <ul>
+            <li class="active"><i class="fa-solid fa-chart-line"></i> Dashboard</li>
+            <li><i class="fa-solid fa-truck"></i> Procurement</li>
+            <li><i class="fa-solid fa-cash-register"></i> Sales</li>
+            <li><i class="fa-solid fa-file-invoice"></i> Credit Sales</li>
+            <li class="settings-link"><i class="fa-solid fa-gear"></i> Settings</li>
+        </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <h2>Business Overview</h2>
+
+        <!-- SUMMARY CARDS -->
+        <div class="cards">
+
+            <div class="card">
+                <img src="../assets/images/grain.png" alt="Stock">
+                <div class="card-info">
+                    <h3>Total Stock</h3>
+                    <p>20,000 KG</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/images/sale.png" alt="Sales">
+                <div class="card-info">
+                    <h3>Total Sales</h3>
+                    <p>UGX 1,200,000</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/images/credit.png" alt="Credit">
+                <div class="card-info">
+                    <h3>Credit Sales</h3>
+                    <p>UGX 250,000</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- QUICK ACTIONS -->
+        <h2>Quick Actions</h2>
+
+        <div class="actions">
+
+            <div class="action-card">
+                <i class="fa-solid fa-plus"></i>
+                <h4 class="text">Add Stock</h4>
+            </div>
+
+            <div class="action-card">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <h4 class="text">Record Sale</h4>
+            </div>
+
+            <div class="action-card">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h4 class="text">View Reports</h4>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
