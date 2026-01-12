@@ -1,0 +1,102 @@
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/hoima.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.top-bar {
+    background: #0a2a43;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #0a2a43;
+}
+
+/* STOCK SUMMARY */
+.stock-summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.stock-summary div {
+    background: #194668;
+    padding: 12px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    color: #f8f8f9;
+    font-weight: bold;
+}
+
+/* FORM */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* WARNING */
+#stockWarning {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* BUTTON */
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #0a2a43;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}

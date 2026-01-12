@@ -1,0 +1,91 @@
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/credit.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background: #065f46;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #065f46;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.stock-summary {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.stock-summary div {
+    background: #ecfdf5;
+    padding: 12px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    color: #065f46;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #065f46;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button:disabled {
+    background: #9ca3af;
+}
+
+#warning {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KGL | Stock Transfer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/stock-transfer.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>KGL Manager</h1>
+    <span><i class="fa-solid fa-right-left"></i> Stock Transfer</span>
+</header>
+
+<main class="container">
+
+<div class="card">
+
+    <h2><i class="fa-solid fa-warehouse"></i> Transfer Stock Between Branches</h2>
+
+    <form id="transferForm">
+
+        <!-- FROM -->
+        <label>From Branch</label>
+        <select id="fromBranch" required>
+            <option value="">-- Select Branch --</option>
+            <option value="Maganjo">Maganjo</option>
+            <option value="Matugga">Matugga</option>
+        </select>
+
+        <!-- TO -->
+        <label>To Branch</label>
+        <select id="toBranch" required>
+            <option value="">-- Select Branch --</option>
+            <option value="Maganjo">Maganjo</option>
+            <option value="Matugga">Matugga</option>
+        </select>
+
+        <!-- PRODUCE -->
+        <label>Produce</label>
+        <select id="produce" required>
+            <option value="">-- Select Produce --</option>
+            <option value="Beans">Beans</option>
+            <option value="Grain Maize">Grain Maize</option>
+            <option value="Cow Peas">Cow Peas</option>
+            <option value="G-nuts">G-nuts</option>
+            <option value="Soybeans">Soybeans</option>
+        </select>
+
+        <!-- AVAILABLE -->
+        <div class="stock-info">
+            Available Stock:
+            <strong id="availableStock">0 KG</strong>
+        </div>
+
+        <!-- TONNAGE -->
+        <label>Tonnage to Transfer (KG)</label>
+        <input type="number" id="tonnage" min="1" required>
+        <small id="warning"></small>
+
+        <button type="submit">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i> Transfer Stock
+        </button>
+
+        <p id="message"></p>
+
+    </form>
+
+</div>
+
+</main>
+
+<script src="../js/stock-transfer.js"></script>
+</body>
+</html>

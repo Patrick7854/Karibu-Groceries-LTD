@@ -1,0 +1,79 @@
+body {
+    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1e3a8a;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.stock-info {
+    margin: 15px 0;
+    padding: 12px;
+    background: #eff6ff;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button:disabled {
+    background: #9ca3af;
+}
+
+#warning {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}

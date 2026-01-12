@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KGL Branch Sales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/branch-sales.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>KGL Sales</h1>
+    <span><i class="fa-solid fa-store"></i> Branch Sales</span>
+</header>
+
+<main class="container">
+
+<form id="salesForm" class="card">
+
+    <h2><i class="fa-solid fa-cart-shopping"></i> Record Sale</h2>
+
+    <!-- BRANCH -->
+    <label>Select Branch</label>
+    <select id="branch" required>
+        <option value="">-- Select Branch --</option>
+        <option value="Maganjo">Kampala</option>
+        <option value="Matugga">Hoima</option>
+        <option value="Matugga">Kyangwali</option>
+        <option value="Matugga">Kikuube</option>
+        <option value="Matugga">Gulu</option>
+        <option value="Matugga">Kamwenge</option>
+    </select>
+
+    <!-- STOCK SUMMARY -->
+    <div class="stock-summary">
+        <div>
+            <span>Total Branch Stock</span>
+            <strong id="branchTotal">0 KG</strong>
+        </div>
+        <div>
+            <span>Produce Stock</span>
+            <strong id="productStock">0 KG</strong>
+        </div>
+    </div>
+
+    <!-- PRODUCE -->
+    <label>Select Produce</label>
+    <select id="produce" required>
+        <option value="">-- Select Produce --</option>
+        <option value="Beans">Beans</option>
+        <option value="Grain Maize">Grain Maize</option>
+        <option value="Cow Peas">Cow Peas</option>
+        <option value="G-nuts">G-nuts</option>
+        <option value="Soybeans">Soybeans</option>
+    </select>
+
+    <label>Tonnage to Sell (KG)</label>
+    <input type="number" id="tonnage" min="1" required>
+    <small id="warning"></small>
+
+    <label>Buyer Name</label>
+    <input type="text" minlength="2" required>
+
+    <label>Amount Paid (UGX)</label>
+    <input type="number" min="10000" required>
+
+    <label>Sales Agent Name</label>
+    <input type="text" minlength="2" required>
+
+    <button type="submit">
+        <i class="fa-solid fa-check"></i> Complete Sale
+    </button>
+
+    <p id="message"></p>
+
+</form>
+
+</main>
+
+<script src="../js/branch-sales.js"></script>
+</body>
+</html>
