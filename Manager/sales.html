@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sales | KGL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/manager/sales.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <header class="top-bar">
+        <div class="brand">
+            <img class="logo" src="../assets/images/kgl logo.png">
+            <h1>Record Sale</h1>
+        </div>
+
+        <!-- BACK BUTTON -->
+        <button class="back-btn" onclick="window.location.href='manager-dashboard.html'">
+            <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+        </button>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="container">
+
+        <form class="card" id="salesForm">
+
+            <h2><i class="fa-solid fa-cash-register"></i> Sales Form</h2>
+
+            <label>Branch</label>
+            <select id="branch" required>
+                <option value="">Select Branch</option>
+                <option value="MAGANJO">MAGANJO</option>
+                <option value="MATUGGA">MATUGGA</option>
+            </select>
+
+            <label>Produce</label>
+            <select id="produce" required>
+                <option value="">Select Produce</option>
+                <option>Beans</option>
+                <option>Grain Maize</option>
+                <option>Cow Peas</option>
+                <option>G-nuts</option>
+                <option>Soybeans</option>
+            </select>
+
+            <label>Quantity (KG)</label>
+            <input type="number" id="quantity" placeholder="Enter quantity" required>
+
+            <label>Selling Price (UGX)</label>
+            <input type="number" id="price" placeholder="Price per KG" required>
+
+            <button type="submit">
+                <i class="fa-solid fa-check"></i> Complete Sale
+            </button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </main>
+
+    <script src="../js/sales.js"></script>
+</body>
+
+</html>

@@ -5,6 +5,32 @@
     box-sizing: border-box;
     font-family: "Segoe UI", Arial, sans-serif;
 }
+/* SMOOTH SCROLL CONTENT ONLY */
+.content {
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+}
+
+/* FIX SIDEBAR & HEADER (EXTRA SAFETY) */
+.sidebar {
+    overflow-y: auto;
+}
+
+.top-bar {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* STOCK CARD BADGE FEEL */
+.stock-card {
+    border-left: 6px solid #0a2a43;
+}
+
+/* TRANSFER MESSAGE STYLE */
+#transferMessage {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
 
 body {
     background: #f1f5f9;
@@ -18,6 +44,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.dashboard-container {
+    margin-top: 80px;
 }
 
 .brand {
@@ -48,10 +83,18 @@ body {
 
 /* SIDEBAR */
 .sidebar {
+    position: fixed;
     width: 250px;
     background: white;
     min-height: calc(100vh - 80px);
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.08);
+    top: 80px;
+    left: 0;
+    height: 100vh;
+}
+
+.content {
+    margin-left: 250px;
 }
 
 .sidebar ul {
@@ -247,4 +290,45 @@ body {
     .sidebar {
         display: none;
     }
+}
+
+.transfer-section {
+    margin-top: 40px;
+}
+
+.transfer-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.transfer-form select,
+.transfer-form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.transfer-form button {
+    background: #0a2a43;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.transfer-form button:hover {
+    background: #09558f;
+}
+
+.action-card {
+    cursor: pointer;
+}
+
+.action-card:active {
+    transform: scale(0.97);
 }

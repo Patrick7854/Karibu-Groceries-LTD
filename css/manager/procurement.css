@@ -1,0 +1,126 @@
+body {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+        url("../assets/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+/* =========== HEADER (FIXED) ======= */
+.top-bar {
+    background: #0a2a43;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 55px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-btn i {
+    margin-right: 6px;
+}
+.back-btn a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.back-btn:hover {
+    background: white;
+    color: #0a2a43;
+}
+
+/* PUSH CONTENT DOWN */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin-top: 90px;
+}
+
+/* ========== FORM CARD ========= */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #0a2a43;
+}
+
+/* INPUTS */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #0a2a43;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #063053;
+}
+
+/* MESSAGE */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
